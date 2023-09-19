@@ -1,0 +1,121 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #00002e;
+  height: 250px;
+  color: #d292ff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  .swiperSlide_heading {
+    font: bold;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .swiperSlide_normal_text_one {
+    font-size: 28px;
+    overflow: hidden;
+    border-right: 0.15em solid #d292ff;
+    white-space: nowrap;
+    // margin: 0 auto;
+    animation: typing 3.7s steps(30, end), blink-caret 0.5s step-end infinite;
+  }
+  .swiperSlide_normal_text_two {
+    animation-delay: 3.5s;
+    animation-duration: 4s;
+  }
+  .swiperSlide_normal_text_three {
+    animation-delay: 6.5s;
+    animation-duration: 4s;
+  }
+  .swiperSlide_normal_text_four {
+    animation-delay: 9.5s;
+    animation-duration: 4s;
+  }
+  .swiperSlide_normal_text_five {
+    animation-delay: 12.5s;
+    animation-duration: 4s;
+  }
+  .swiperSlide_normal_text_six {
+    animation-delay: 15.5s;
+    animation-duration: 4s;
+  }
+  .swiperSlide_normal_text_seven {
+    animation-delay: 18.5s;
+    animation-duration: 4s;
+  }
+  .swiperSlide_normal_text_eight {
+    animation-delay: 21.5s;
+    animation-duration: 4s;
+  }
+  .swiperSlide_normal_text_nine {
+    animation-delay: 24.5s;
+    animation-duration: 4s;
+  }
+  .swiperSlide_normal_text_ten {
+    animation-delay: 27.5s;
+    animation-duration: 4s;
+  }
+}
+
+.swiperSlide_normal_text {
+  font-size: 28px;
+  overflow: hidden;
+  border-right: 0.15em solid #d292ff;
+  white-space: nowrap;
+  animation: typing 3.5s steps(30, end), blink-caret 1s step-end infinite;
+}
+
+// .swiper-slide img {
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #d292ff;
+  }
+}

@@ -1,0 +1,17 @@
+.chat_wrapper {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  .prompt_text {
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+  }
+  .arrow_icon {
+    @include displayCenter(center, center);
+    height: 30px;
+    width: 30px;
+    margin: 25px auto 0px auto;
+    color: white;
+  }
+}

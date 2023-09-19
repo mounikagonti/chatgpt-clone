@@ -1,0 +1,21 @@
+.layout_wrapper {
+  display: flex;
+  .sidebar {
+    background-color: #202123;
+    max-width: 20rem;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  .layout_child_wrapper {
+    background-color: #343541;
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .layout_wrapper {
+    .sidebar {
+      min-width: 20rem;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.container {
+  // max-width: 1320px;
+  margin: auto;
+  .banner__wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(850px, 25%) 1fr;
+    .banner__left {
+      background-color: #00002e;
+      color: #d292ff;
+      font-size: 20px;
+      padding: 20px;
+      span {
+        font-size: 30px;
+      }
+      .banner__left__text {
+        margin-top: 150px;
+
+        .banner__left__text__heading {
+          font-size: 30px;
+          font-weight: 800;
+        }
+        .banner__left__normal__text {
+          font-size: 30px;
+          // font-weight: 800;
+        }
+      }
+    }
+    .banner__right {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      flex-direction: column;
+      background-color: #000000;
+      padding: 50px;
+      .banner__right__text {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        font-weight: 600;
+        color: #ffffff;
+        margin-top: 150px;
+      }
+      .banner__right__top {
+        .banner__right__btn {
+          margin-top: 30px;
+          margin-left: 30px;
+          display: flex;
+          gap: 10px;
+          .banner__right__login__btn {
+            background-color: #0000ff;
+            color: #ffffff;
+            padding: 12px 90px;
+            border-radius: 5px;
+            border: none;
+            font-weight: 600;
+            font-size: 16px;
+          }
+          .banner__right__sign_in__btn {
+            background-color: #0000ff;
+            color: #ffffff;
+            padding: 12px 85px;
+            border-radius: 5px;
+            border: none;
+            font-weight: 600;
+            font-size: 16px;
+          }
+        }
+      }
+      .banner__right_bottom {
+        @include displayCenter(center, center);
+        flex-direction: column;
+        margin-top: 210px;
+
+        .chat_gpt__icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .open__ai {
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+          }
+        }
+        .chat_gpt__terms_wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          margin-top: 10px;
+          .terms,
+          .or {
+            color: #8e8ea0;
+            font-size: 12px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $md) {
+  .container {
+    .banner__wrapper {
+      grid-template-columns: 1fr;
+      .banner__left {
+        display: none;
+      }
+      .banner__right {
+        padding: 10px;
+        .banner__right__top {
+          .banner__right__btn {
+            @include displayCenter(center, center);
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }
+  }
+}

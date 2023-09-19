@@ -1,0 +1,19 @@
+.messageText_wrapper {
+  padding: 20px 0px 20px 0px;
+  color: white;
+  .user_wrapper {
+    display: flex;
+    margin: 0px auto 0px auto;
+    padding: 0px 20px 0px 20px;
+    max-width: 36rem;
+    .text_wrapper {
+      padding-top: 0.25rem;
+      font-size: 0.87rem;
+      margin-left: 15px;
+    }
+  }
+}
+
+.bg-custom {
+  background-color: #434654;
+}

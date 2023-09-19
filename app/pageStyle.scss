@@ -1,0 +1,47 @@
+.homepage_wrapper {
+  color: #ffff;
+  @include displayCenter(center, center);
+  flex-direction: column;
+  height: 100vh;
+  padding: 0px 8px 0px 8px;
+  .homepage_text {
+    font-size: 3rem;
+    font: bold;
+    margin-bottom: 20px;
+  }
+  .homepage_features {
+    display: flex;
+    align-items: center;
+    margin: 0px 8px 0px 8px;
+    .homepage_features_one {
+      @include displayCenter(center, center);
+      flex-direction: column;
+      margin-bottom: 5px;
+      .icon {
+        height: 22px;
+        width: 22px;
+      }
+    }
+    .homepage_features_one_text {
+      margin: 0px 8px 0px 8px;
+    }
+  }
+}
+
+.infoText {
+  padding: 16px;
+  background-color: rgba(84, 110, 122, 0.5);
+  border-radius: 8px;
+  max-width: 300px;
+  margin: 8px 0px 8px 0px;
+}
+
+@media screen and (max-width: $md) {
+  .homepage_wrapper {
+    .homepage_features {
+      @include displayCenter(center, center);
+      flex-wrap: wrap;
+      overflow-y: auto;
+    }
+  }
+}

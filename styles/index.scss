@@ -1,0 +1,15 @@
+@import './basic.scss';
+@import './utility.scss';
+@import '../app/layout.scss';
+@import '../app/pageStyle.scss';
+@import '../modules/sidebar/SideBar.scss';
+@import '../modules/newChat/NewChat.scss';
+@import '../modules/loginPage/LoginPage.scss';
+@import '../modules/chatRow/ChatRow.scss';
+@import '../modules/nChat/Chat.scss';
+@import '../modules/messageText/MessageText.scss';
+@import '../modules/chatInput/ChatInput.scss';
+@import '../modules/modelSelection/ModelSelection.scss';
+@import '../modules/clientProvider/ClientProvider.scss';
+@import '../app/chat/[id]/page.scss';
+@import '../modules/swiperPage/SwiperPage.scss';

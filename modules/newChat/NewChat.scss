@@ -1,0 +1,25 @@
+.newChat_wrapper {
+  border: 2px solid #4a5568;
+  .plus_icon {
+    height: 22px;
+    width: 22px;
+  }
+  .newChat_text {
+    margin-left: 10px;
+  }
+}
+
+.chatRow {
+  border-radius: 8px;
+  padding: 12px 22px 12px 22px;
+  font-size: 16px;
+  @include displayCenter(center, center);
+  margin: 8px;
+  color: #cbd5e0;
+  &:hover {
+    background-color: rgba(84, 110, 122, 0.7);
+    color: #cbd5e0;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+  }
+}

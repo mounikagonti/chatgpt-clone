@@ -1,0 +1,54 @@
+.chatInput_wrapper {
+  background-color: rgba(55, 65, 81, 0.5);
+  color: #718096;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  .form {
+    display: flex;
+    padding: 1rem 2rem 1rem 2rem;
+    gap: 1.25rem;
+    .f_input {
+      background-color: transparent;
+      flex: 1;
+      border: none;
+      color: #d2d2d2;
+      &:focus {
+        outline: none;
+      }
+      &:disabled {
+        cursor: not-allowed;
+        color: #d2d2d2;
+      }
+    }
+    .s_btn {
+      background-color: #11a37f;
+      color: white;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+      &:hover {
+        opacity: 0.5;
+      }
+      &:disabled {
+        background-color: #d2d2d2;
+        cursor: not-allowed;
+      }
+      .goPaperAir_icon {
+        height: 1rem;
+        width: 1rem;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  .modelSelection {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $md) {
+  .chatInput_wrapper {
+    .modelSelection {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.sidebar_wrapper {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .sidebar_newChat_wrapper {
+    flex: 1;
+    .newChat {
+      .modelSelection {
+        display: block;
+        max-width: 290px;
+        margin-left: 6px;
+      }
+      .chat_loading_wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5rem 0 0.5rem 0;
+        .loading {
+          text-align: center;
+          color: white;
+        }
+      }
+    }
+  }
+  .profile_pic {
+    border-radius: 50%;
+    cursor: pointer;
+    // max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    &:hover {
+      opacity: 50;
+    }
+  }
+}
+
+@media screen and (max-width: $md) {
+  .sidebar_wrapper {
+    .sidebar_newChat_wrapper {
+      .newChat {
+        .modelSelection {
+          display: none;
+        }
+      }
+    }
+  }
+}
