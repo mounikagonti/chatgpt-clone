@@ -16,6 +16,10 @@ const LoginPage = () => {
         </div>
 
         <div className='banner__right'>
+          <div className='banner__right__chatGPT'>
+            ChatGPT
+            <span className='font__circle'>●</span>
+          </div>
           <div className='banner__right__top'>
             <div className='banner__right__text'>Get Started</div>
             <div className='banner__right__btn'>

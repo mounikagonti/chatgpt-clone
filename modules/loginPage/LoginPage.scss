@@ -34,6 +34,14 @@
       flex-direction: column;
       background-color: #000000;
       padding: 50px;
+      .banner__right__chatGPT {
+        color: white;
+        font-size: 20px;
+        // padding: 20px;
+        span {
+          font-size: 30px;
+        }
+      }
       .banner__right__text {
         position: relative;
         display: flex;
@@ -73,7 +81,7 @@
       .banner__right_bottom {
         @include displayCenter(center, center);
         flex-direction: column;
-        margin-top: 210px;
+        margin-top: 160px;
 
         .chat_gpt__icon {
           display: flex;
